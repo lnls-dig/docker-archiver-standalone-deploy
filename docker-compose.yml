@@ -2,6 +2,7 @@ version: '2'
 services:
     epics-archiver:
         container_name: epics-archiver
+        restart: always
         image: lnlscon/epics-archiver-single:1.2.1
         hostname: localhost
         network_mode: "host"
@@ -25,6 +26,7 @@ services:
 
     epics-archiver-mysql-db:
         container_name: epics-archiver-mysql-db
+        restart: always
         image: lnlscon/epics-archiver-mysql-db:latest
         hostname: epics-archiver-mysql-db
         environment:
