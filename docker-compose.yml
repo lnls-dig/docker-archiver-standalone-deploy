@@ -33,6 +33,8 @@ services:
             - MYSQL_PASSWORD=controle
             - MYSQL_DATABASE=lnls_archiver_db
         network_mode: "host"
+        ports:
+            - 3306:3306
         dns:
             - 10.0.0.71
             - 10.0.0.72
