@@ -2,7 +2,7 @@ version: '2'
 services:
     epics-archiver:
         container_name: epics-archiver
-        image: lnlscon/epics-archiver-single:latest
+        image: lnlscon/epics-archiver-single:1.2.0
         hostname: localhost
         network_mode: "host"
         dns:
