@@ -9,6 +9,11 @@ files:
     sudo bash -c 'echo "127.0.0.1   epics-archiver-mysql-db" >> \
         /etc/hosts'
 
+Also, set the EPICS_CA_ADDR_LIST variable according to your
+network. Just puts yout subnet broadcast and/or the IPs of
+any machines running IOCs. The file is located in 
+configuration/lnls-epics-archiver.env.
+
 ### Running instructions
 
     ./run-archiver.sh
